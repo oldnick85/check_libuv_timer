@@ -21,7 +21,7 @@ void fake_timer_cb(uv_timer_t* handle)
 }
 
 int main() {
-    printf("stop\n");
+    printf("start\n");
     loop = uv_default_loop();
     uv_timer_init(loop, &gc_req);
     uv_unref((uv_handle_t*) &gc_req);
